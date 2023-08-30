@@ -96,6 +96,7 @@ Colores_Crystal As screen:
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverColor: =
             HoverFill: =
+            OnSelect: =Navigate(Pantalla_Pantone)
             PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
@@ -419,7 +420,7 @@ Colores_Crystal As screen:
             Y: =76
             ZIndex: =9
 
-    Container4 As groupContainer.manualLayoutContainer:
+    Container_Gallery1 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Light
         Height: =714
         RadiusBottomLeft: =4
@@ -429,75 +430,4 @@ Colores_Crystal As screen:
         Width: =1600
         Y: =186
         ZIndex: =24
-
-        Gallery1 As gallery.galleryVertical:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            DelayItemLoading: =true
-            Height: =607
-            Items: |-
-                =If (
-                    var_mat = "Algodon",
-                    Filter(
-                        colorCalceteria2,
-                        StartsWith(
-                            coColor,
-                            colorInput.Text
-                        ) && StartsWith(
-                            coMaterial,
-                            codigoInput.Text
-                        ) && StartsWith(
-                            principalColor,
-                            If(
-                                Text(DropdownColores.Selected.Value) = "Todos",
-                                "",
-                                Text(DropdownColores.Selected.Value)
-                            )
-                        ) && algodon = "Si"
-                    ),
-                    If (
-                        var_mat = "Nylon",
-                        Filter(
-                            colorCalceteria2,
-                            StartsWith(
-                                coColor,
-                                colorInput.Text
-                            ) && StartsWith(
-                                coMaterial,
-                                codigoInput.Text
-                            ) && StartsWith(
-                                principalColor,
-                                If(
-                                    Text(DropdownColores.Selected.Value) = "Todos",
-                                    "",
-                                    Text(DropdownColores.Selected.Value)
-                                )
-                            ) && nylon = "Si"
-                        ),
-                        Filter(
-                            colorCalceteria2,
-                            StartsWith(
-                                coColor,
-                                colorInput.Text
-                            ) && StartsWith(
-                                coMaterial,
-                                codigoInput.Text
-                            ) && StartsWith(
-                                principalColor,
-                                If(
-                                    Text(DropdownColores.Selected.Value) = "Todos",
-                                    "",
-                                    Text(DropdownColores.Selected.Value)
-                                )
-                            )
-                        )
-                    )
-                )
-            Layout: =Layout.Vertical
-            LoadingSpinner: =LoadingSpinner.Data
-            TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))
-            Width: =1486
-            WrapCount: =5
-            X: =40
-            Y: =27
-            ZIndex: =1
 
