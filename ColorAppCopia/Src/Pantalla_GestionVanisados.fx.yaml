@@ -635,3 +635,171 @@ Pantalla_GestionVanisados As screen:
         Y: =778
         ZIndex: =151
 
+    Button1_11 As button:
+        BorderColor: =ColorFade(Self.Fill, -110%)
+        BorderThickness: =4
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =47
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(56, 96, 178, 1), -20%)
+        OnSelect: =
+        Size: =17
+        Text: ="Administracion de roles"
+        Width: =300
+        X: =50
+        Y: =107
+        ZIndex: =152
+
+    Container2 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Fill: =RGBA(237, 237, 237, 1)
+        Height: =643
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =1339
+        X: =73
+        Y: =207
+        ZIndex: =153
+
+        "Gallery4 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+            BorderColor: =RGBA(166, 166, 166, 1)
+            DelayItemLoading: =true
+            Fill: =RGBA(237, 237, 237, 1)
+            Height: =522
+            Items: =Roles
+            Layout: =Layout.Vertical
+            LoadingSpinner: =LoadingSpinner.Data
+            TemplatePadding: =0
+            TemplateSize: =154
+            Width: =1194
+            X: =79
+            Y: =49
+            ZIndex: =1
+
+            Image4 As image:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                FocusedBorderThickness: =4
+                Height: =72
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                OnSelect: =Select(Parent)
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                RadiusBottomLeft: =8
+                RadiusBottomRight: =8
+                RadiusTopLeft: =8
+                RadiusTopRight: =8
+                Width: =72
+                X: =63
+                Y: =37
+                ZIndex: =1
+
+            Subtitle2 As label:
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.'Segoe UI'
+                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                Height: =54
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =ThisItem.Usuario
+                VerticalAlign: =VerticalAlign.Top
+                Width: =546
+                X: =160
+                Y: =55
+                ZIndex: =3
+
+            Rectangle9 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                Fill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                Height: =Parent.TemplateHeight
+                OnSelect: =Select(Parent)
+                Visible: =ThisItem.IsSelected
+                Width: =4
+                ZIndex: =6
+
+            ComboBox3 As combobox:
+                BorderColor: =RGBA(166, 166, 166, 1)
+                ChevronBackground: =RGBA(255, 255, 255, 1)
+                ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
+                ChevronDisabledFill: =RGBA(166, 166, 166, 1)
+                ChevronFill: =RGBA(33, 33, 33, 1)
+                ChevronHoverBackground: =RGBA(212, 212, 212, 1)
+                ChevronHoverFill: =RGBA(33, 33, 33, 1)
+                Color: =RGBA(51, 51, 51, 1)
+                Default: =ThisItem.Rol
+                DefaultSelectedItems: =ThisItem.Rol
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayFields: =["Value"]
+                Font: =Font.'Segoe UI'
+                Height: =72
+                HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                HoverColor: =RGBA(51, 51, 51, 1)
+                HoverFill: =RGBA(212, 212, 212, 1)
+                IsSearchable: =false
+                Items: =["usuario","copropietario"]
+                OnSelect: =Select(Parent)
+                PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(0, 120, 212, 1)
+                SearchFields: =["Value"]
+                SearchItems: =[]
+                SelectionFill: =RGBA(0, 120, 212, 1)
+                SelectMultiple: =false
+                Size: =13
+                Width: =272
+                X: =706
+                Y: =37
+                ZIndex: =7
+
+            Button10 As button:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(0, 120, 212, 1)
+                FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =66
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
+                OnSelect: |
+                    =Patch(
+                        Roles, 
+                        ThisItem,
+                        { Rol: ComboBox3.Selected }
+                    )
+                PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =15
+                Text: ="Botón"
+                Width: =107
+                X: =1045
+                Y: =44
+                ZIndex: =8
+
