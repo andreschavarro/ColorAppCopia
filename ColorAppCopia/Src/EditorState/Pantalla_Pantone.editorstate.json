@@ -4776,7 +4776,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Container_BarraNavegacion",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4929,7 +4929,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Container_Filtros",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7262,7 +7262,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "inv_selected_pantone",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -11027,7 +11027,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Rectangle211",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

@@ -96,6 +96,7 @@ Colores_Crystal As screen:
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverColor: =
             HoverFill: =
+            OnSelect: =Navigate(Pantalla_Pantone)
             PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
@@ -419,7 +420,7 @@ Colores_Crystal As screen:
             Y: =76
             ZIndex: =9
 
-    Container4 As groupContainer.manualLayoutContainer:
+    Container_Gallery1 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Light
         Height: =714
         RadiusBottomLeft: =4
