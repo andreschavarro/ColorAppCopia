@@ -1,6 +1,6 @@
 App As appinfo:
     BackEnabled: =false
-    OnStart: |-
+    OnStart: |+
         =Collect(
             DatosUsoColorApp,
             {
@@ -20,6 +20,8 @@ App As appinfo:
                 lycra: ""
             }
         )
+        
+        
     Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:
